@@ -23,11 +23,19 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+gem 'active_model_serializers', '~> 0.10.10'
+# gem 'jsonapi-renderer', '~> 0.2.2'
+gem 'jsonapi-rails'
+# gem 'jsonapi-rb'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec', '~> 3.9'
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
