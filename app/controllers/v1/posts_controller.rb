@@ -1,6 +1,6 @@
 class V1::PostsController < ApplicationController
   def index
-    # sleep 1
+    sleep 1
     render json: Post.all
   end
   def show
